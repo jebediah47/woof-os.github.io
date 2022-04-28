@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <style>
       @import url("./styles/index.css");
@@ -17,24 +18,57 @@
       <header class="ant-layout-header">
         <div class="header-logo-and-name">
           <div class="ant-avatar" style="margin-right: 10px">
-            <img src="https://github.com/woof-os.png" alt="Woof OS" />
+            <img
+              id="header-logo"
+              src="https://github.com/woof-os.png"
+              alt="Woof OS"
+            />
           </div>
           <strong>Woof OS</strong>
         </div>
       </header>
       <!-- End Header -->
 
+      <!-- Content -->
+      <main>
+      <!-- Title Section -->
+      <div>
+      <section id="#main">
       <!-- Particle JS Canvas -->
       <div id="particles-js"></div>
+        <div class="main-home-div" id="hide-logo-div">
+          <img
+            class="main-logo"
+            id="main-logo"
+            src="https://media.discordapp.net/attachments/890856170779201536/969209177048227911/meow.png"
+          />
 
-      <!-- Content -->
-      <section id="#" class="main-home-div">
-        <img
-          class="main-logo"
-          src="https://media.discordapp.net/attachments/890856170779201536/969209177048227911/meow.png"
-        />
-        <h1 class="welcome-h1">Woof OS</h1>
+          <h1 class="welcome-h1">Woof OS</h1>
+        </div>
+
+        <span class="scrolldown-arrow" id="hide">
+          <span role="img" aria-label="down" class="anticon anticon-down"
+            ><svg
+              viewBox="64 64 896 896"
+              focusable="false"
+              data-icon="down"
+              width="7vh"
+              height="7vh"
+              fill="#434343"
+              aria-hidden="true"
+            >
+              <path
+                d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+              ></path></svg
+          ></span>
+        </span>
       </section>
+    </div>
+      <!-- Features Section -->
+      <section id="features" style="padding: 10px">
+        <h1 class="welcome-h1">Features</h1>
+      </section>
+      </main>
       <!-- End Content -->
     </div>
 
