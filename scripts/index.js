@@ -21,7 +21,7 @@ new ScrollMagic.Scene({
   .addTo(controller);
 
 new ScrollMagic.Scene({
-  duration: 360 * 2,
+  duration: 360,
 })
   .addTo(controller)
   // .addIndicators()
