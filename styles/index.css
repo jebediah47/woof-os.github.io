@@ -1,7 +1,7 @@
-@import url("https: //cdnjs.cloudflare.com/ajax/libs/antd/4.20.1/antd.dark.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/antd/4.20.1/antd.dark.min.css");
 @font-face {
   font-family: "SF Mono";
-  src: url("https: //github.com/blaisck/sfwin/raw/master/SFMono/TrueType/SFMono-Regular.ttf");
+  src: url("https://github.com/blaisck/sfwin/raw/master/SFMono/TrueType/SFMono-Regular.ttf");
 }
 
 #particles-js {
@@ -58,4 +58,10 @@ body {
   font-family: "SF Mono", sans-serif;
   text-align: center;
   color: #c4cfea;
+}
+
+.header-logo-and-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
