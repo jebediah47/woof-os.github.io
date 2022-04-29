@@ -1,11 +1,17 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/antd/4.20.1/antd.dark.min.css");
+
 @font-face {
   font-family: "SF Mono";
   src: url("./assets/SFMono-Regular.ttf");
 }
 
-h1 {
-  font-family: 'SF Mono', monospace;
+@font-face {
+  font-family: "SF Pro Regular";
+  src: url("./assets/SFProDisplay-Regular.ttf");
+}
+
+* {
+  font-family: 'SF Pro Regular', sans-serif;
 }
 
 #particles-js {
@@ -100,10 +106,69 @@ body {
 }
 
 section {
-  background-color: #00000000;
-  height: calc(100vh - 64px)
+  background-color: #14141400;
+  height: calc(100vh - 64px);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 #main {
   height: calc(100vh - 64px);
+}
+
+.feature-icon {
+  height: 20vh;
+  width: 20vh;
+}
+
+.feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.features {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 10px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 100%;
+}
+
+.feature-icon {
+  margin: 10%
+}
+
+#f1, #f2, #f3 {
+  opacity: 0;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+#features-content {
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+} 
+
+#f1.visible, #f2.visible, #f3.visible, #features-content.visible {
+  opacity: 1;
+}
+
+.invisection div {
+  opacity: 0;
+  display: none;
 }

@@ -15,6 +15,51 @@ new ScrollMagic.Scene({
   .addTo(controller);
 
 new ScrollMagic.Scene({
+  offset: 80,
+  duration: "80%",
+  triggerElement: "#features-content",
+  triggerHook: 0.99,
+})
+  .setClassToggle("#features-content", "visible")
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  offset: 80,
+  duration: "80%",
+  triggerElement: "#downloads-content",
+  triggerHook: 0.99,
+})
+  .setClassToggle("#downloads-content", "visible")
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  offset: 80,
+  duration: "80%",
+  triggerElement: "#f1",
+  triggerHook: 0.9,
+})
+  .setClassToggle("#f1", "visible")
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  offset: 90,
+  duration: "80%",
+  triggerElement: "#f2",
+  triggerHook: 0.9,
+})
+  .setClassToggle("#f2", "visible")
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  offset: 100,
+  duration: "80%",
+  triggerElement: "#f3",
+  triggerHook: 0.9,
+})
+  .setClassToggle("#f3", "visible")
+  .addTo(controller);
+
+new ScrollMagic.Scene({
   offset: 200,
 })
   .setClassToggle("#hide-logo-div", "invisible")
@@ -53,4 +98,8 @@ for (var i = 0; i < slides.length; i++) {
     .setPin(slides[i], { pushFollowers: false })
     // .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
+
+  new ScrollMagic.Scene({
+    offset: 100,
+  }).setClassToggle(slides[i], "invisection");
 }
