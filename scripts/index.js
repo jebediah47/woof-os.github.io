@@ -9,25 +9,25 @@ particlesJS.load(
 var controller = new ScrollMagic.Controller();
 
 new ScrollMagic.Scene({
-  offset: 5,
+  offset: 10,
 })
   .setClassToggle("#hide", "invisible")
   .addTo(controller);
 
 new ScrollMagic.Scene({
-  offset: 80,
-  duration: "80%",
+  offset: 50,
+  duration: "40%",
   triggerElement: "#features-content",
-  triggerHook: 0.99,
+  triggerHook: 0.5,
 })
   .setClassToggle("#features-content", "visible")
   .addTo(controller);
 
 new ScrollMagic.Scene({
-  offset: 80,
-  duration: "80%",
+  offset: 50,
+  duration: "40%",
   triggerElement: "#downloads-content",
-  triggerHook: 0.99,
+  triggerHook: 0.5,
 })
   .setClassToggle("#downloads-content", "visible")
   .addTo(controller);
