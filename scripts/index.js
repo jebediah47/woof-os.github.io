@@ -28,11 +28,9 @@ new ScrollMagic.Scene({
   .on("update", (e) => {
     console.log(e);
     const logo = document.getElementById("main-logo");
-    const subLogo = document.getElementById("header-logo");
     // rotate according to e.progress.toFixed(3)
     const deg = (e.scrollPos / e.endPos) * 180;
     logo.style.transform = `rotate(${deg}deg)`;
-    subLogo.style.transform = `rotate(${deg}deg)`;
   });
 
 var controller = new ScrollMagic.Controller({
