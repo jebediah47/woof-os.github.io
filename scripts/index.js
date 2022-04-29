@@ -60,6 +60,24 @@ new ScrollMagic.Scene({
   .addTo(controller);
 
 new ScrollMagic.Scene({
+  offset: 80,
+  duration: "80%",
+  triggerElement: "#d1",
+  triggerHook: 0.9,
+})
+  .setClassToggle("#d1", "visible")
+  .addTo(controller);
+
+new ScrollMagic.Scene({
+  offset: 80,
+  duration: "80%",
+  triggerElement: "#d2",
+  triggerHook: 0.9,
+})
+  .setClassToggle("#d2", "visible")
+  .addTo(controller);
+
+new ScrollMagic.Scene({
   offset: 200,
 })
   .setClassToggle("#hide-logo-div", "invisible")

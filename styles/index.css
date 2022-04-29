@@ -164,7 +164,9 @@ section {
 
 #f1,
 #f2,
-#f3 {
+#f3,
+#d1,
+#d2 {
   opacity: 0;
   -webkit-transition: all 2s ease-in-out;
   -moz-transition: all 2s ease-in-out;
@@ -185,6 +187,8 @@ section {
 #f1.visible,
 #f2.visible,
 #f3.visible,
+#d1.visible,
+#d2.visible,
 #features-content.visible {
   opacity: 1;
 }
