@@ -38,6 +38,11 @@ header {
   background-repeat: no-repeat;
 }
 
+.in-card {
+  width: 240px;
+  transition: 300ms all ease-in-out;
+}
+
 body {
   margin: 0;
   background-color: #141414;
